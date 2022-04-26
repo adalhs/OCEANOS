@@ -1,0 +1,145 @@
+/* DEFAULT TEXT COLOR: #555
+/* DEFAULT BANNER TEXT COLOR: #cedddd;
+
+/***********************/
+/*        GENERAL      */
+/***********************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  /* To hide the mobile navigation, which I set in the media query
+    to translate 100% to the right, if I don't set this page will have a
+    horizontal scroll bar.  Must set on html and body. */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dubai", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #555;
+
+  /* To hide the mobile navigation, which I set in the media query
+    to translate 100% to the right, if I don't set this page will have a
+    horizontal scroll bar.  Must set on html and body. */
+  overflow-x: hidden;
+}
+
+/***********************/
+/*     NAVIGATION      */
+/***********************/
+.main-header {
+  padding: 0.2rem 5.2rem;
+
+  /* This position: relative is for when we take the navigation off
+    and position it absolutely to turn it into the mobile navigation */
+  position: relative;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 9rem;
+  transition: all 0.3s;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 9.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  font-family: "Rubik", "sans-serif";
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #0b7285;
+  font-size: 2rem;
+  transform: translateY(-0.3rem);
+}
+
+/* MOBILE NAVIGATION*/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* Button is hidden by default */
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/****************************************/
+/*     PAGE HEADERS (NOT MAIN PAGE)     */
+/****************************************/
+.page-header {
+  /* padding: 8rem 0; */
+  background-image: url("../img/header-placeholder.jpg");
+  background-size: cover;
+
+  display: flex;
+  padding: 11rem 3.2rem;
+  justify-content: center;
+}
+
+.header-text {
+  font-size: 4.4rem;
+  color: #cedddd;
+}
+
+/****************************************/
+/*         STICKY NAVIGATION BAR        */
+/****************************************/
+.sticky .main-header {
+  position: fixed;
+  /* top: 0;
+  bottom: 0; */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+  /* Above everything else as I scroll, except the mobile navigation
+  button, which I gave a z-index of 9999 */
+  z-index: 999;
+}
+
+.sticky .page-header {
+  /* So the page doesn't "jump" when the navigation bar is taken out of flow when
+  we set its position: fixed, we add its height as a margin to the top of the hero section */
+  margin-top: 9.6rem;
+}

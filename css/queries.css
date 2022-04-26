@@ -1,0 +1,262 @@
+/**************************/
+/*      BELOW 1344px      */
+/**************************/
+
+/******** GENERAL *********/
+@media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/*       BELOW 1200px     */
+/**************************/
+
+/******* GENERAL **********/
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-nav-list {
+    gap: 8.5rem;
+  }
+}
+
+/**************************/
+/*      BELOW 1040px      */
+/**************************/
+
+/********** GENERAL *******/
+@media (max-width: 65em) {
+  .program-name {
+    font-size: 4rem;
+  }
+
+  .main-nav-list {
+    gap: 6.3rem;
+  }
+
+  /******** TEAM PAGE ******/
+  .team-container {
+    padding: 6rem 8rem;
+  }
+}
+
+/**************************/
+/*       BELOW 944px      */
+/**************************/
+
+/******* MAIN PAGE ********/
+@media (max-width: 59em) {
+  .container-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .program-name {
+    text-align: center;
+    padding: 3rem 10rem 0rem 10rem;
+    font-size: 4.5rem;
+  }
+
+  .hero-image {
+    width: 65%;
+    justify-self: center;
+  }
+
+  /* CREATING MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    /* Shows mobile navigation button */
+    display: block;
+
+    /* So that button shows on top of nav menu when it is open,
+        gave it a very high z-index because it doesn't matter as long as its high */
+    z-index: 9999;
+  }
+
+  .main-nav-list {
+    background-color: rgba(255, 255, 255, 0.979);
+
+    /* Positioning it relative to .main-header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Want it to occupy the whole viewport */
+    height: 100vh;
+
+    /* To allow the mobile menu to "sweep in" from the side */
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.8rem;
+
+    transition: all 0.5s;
+
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) hides navigation visually */
+    opacity: 0;
+
+    /* 2) makes it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* Hides it from screen readers */
+    visibility: hidden;
+  }
+
+  /* nav-open class added through javascript when
+    .btn-mobile-nav is clicked*/
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    /* So mobile menu "sweeps back in" from the side */
+    transform: translateX(0);
+  }
+
+  /* Changes .btn-mobile-nav icon to the close icon once .nav-open is on, meaning that the
+  .btn-mobile-nav has been clicked and the menu is currently open */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /* So that the menu icon does not show when the menu is already open, instead,
+  the close-menu icon will be show */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /********* TEAM PAGE **********/
+  .team-container {
+    padding: 6rem 7rem;
+  }
+
+  .members-grid {
+    row-gap: 0;
+    padding: 8rem 0 0 0;
+  }
+
+  .member-profile {
+    flex-direction: row;
+    grid-column: 1 / -1;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .member-photo {
+    width: 35%;
+    margin-right: 3rem;
+  }
+
+  .member-name strong {
+    font-size: 3.3rem;
+    text-align: left;
+  }
+
+  .member-name {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .member-info {
+    grid-column: 1 / -1;
+    margin-bottom: 10rem;
+  }
+
+  .member-info:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**************************/
+/*       BELOW 704px      */
+/**************************/
+
+/******* MAIN PAGE ********/
+@media (max-width: 44em) {
+  .program-name {
+    text-align: center;
+    padding: 3rem 0rem 0rem 0rem;
+    font-size: 4rem;
+  }
+
+  .hero-image {
+    width: 75%;
+  }
+
+  /****** TEAM PAGE ********/
+  .team-container {
+    padding: 6rem 4rem;
+  }
+
+  .member-photo {
+    width: 40%;
+  }
+
+  .member-name strong {
+    font-size: 2.6rem;
+  }
+
+  .member-name {
+    font-size: 2.2rem;
+  }
+}
+
+/**************************/
+/*       BELOW 560px      */
+/**************************/
+
+/********* GENERAL ********/
+@media (max-width: 35em) {
+  body {
+    font-size: 1.9rem;
+  }
+
+  /******* MAIN PAGE ******/
+  .program-name {
+    text-align: center;
+    padding: 3rem 0rem 1rem 0rem;
+    font-size: 3.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /******** TEAM PAGE ******/
+  .team-container {
+    padding: 6rem 1.6rem;
+  }
+
+  .members-grid {
+    padding: 6rem 0 0 0;
+  }
+
+  .member-photo {
+    width: 45%;
+    margin-right: 1.3rem;
+  }
+
+  .member-name strong,
+  .member-name {
+    font-size: 1.9rem;
+  }
+
+  .member-info {
+    margin-bottom: 6rem;
+  }
+}

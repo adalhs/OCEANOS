@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/oceanos-script.js"></script>
+
+    <title>Oceanos</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="index.html">
+          <img src="img/oceanos-logo.png" class="logo" alt="Oceanos logo" />
+        </a>
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">The Program</a></li>
+          <li><a class="main-nav-link" href="team.html">The Team</a></li>
+          <li><a class="main-nav-link" href="#">News & Events</a></li>
+          <li><a class="main-nav-link" href="#">Gallery</a></li>
+          <li><a class="main-nav-link" href="#">Participate</a></li>
+          <li><a class="main-nav-link" href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Navigation Button -->
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+      <section class="section-hero for-sticky">
+        <div class="container-hero">
+          <!-- Line breaks (<br />) only apply once viewport width is small enough for
+          .program-name to occupy a row by itself -->
+          <div class="program-name">
+            Ocean Community<br />
+            Engagement and Awareness<br />
+            using NASA Earth<br />
+            Observations and Science
+          </div>
+          <img
+            class="hero-image"
+            src="img/hero-image.png"
+            alt="Photo of sea life"
+          />
+        </div>
+      </section>
+
+      <!-- PARTNERS SECTION -->
+      <section class="section-partners">
+        <div class="partner-entities">
+          <h2 class="partners-heading">Partner Organizations</h2>
+
+          <div class="partner-logos">
+            <a class="partner-link" href="#"
+              ><img
+                class="partner-logo"
+                src="img/taller-ecologico-logo.png"
+                alt="Taller Ecologico de Puerto Rico logo"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
