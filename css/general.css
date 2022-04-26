@@ -25,10 +25,11 @@ html {
 
 body {
   font-family: "Dubai", sans-serif;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 400;
   font-size: 2rem;
   color: #555;
+  letter-spacing: 0.05rem;
 
   /* To hide the mobile navigation, which I set in the media query
     to translate 100% to the right, if I don't set this page will have a
@@ -55,6 +56,11 @@ body {
   margin: 0 auto;
 }
 
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   height: 9rem;
   transition: all 0.3s;
@@ -64,7 +70,7 @@ body {
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 9.2rem;
+  gap: 7rem;
 }
 
 .main-nav-link:link,

@@ -20,7 +20,7 @@
   }
 
   .main-nav-list {
-    gap: 8.5rem;
+    gap: 6.5rem;
   }
 }
 
@@ -35,7 +35,7 @@
   }
 
   .main-nav-list {
-    gap: 6.3rem;
+    gap: 4.5rem;
   }
 
   /******** TEAM PAGE ******/
@@ -223,6 +223,10 @@
 @media (max-width: 35em) {
   body {
     font-size: 1.9rem;
+  }
+
+  .main-header {
+    padding: 0.2rem 2rem;
   }
 
   /******* MAIN PAGE ******/
