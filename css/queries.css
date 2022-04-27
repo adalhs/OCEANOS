@@ -76,6 +76,7 @@
   }
 
   .main-nav-list {
+    z-index: 999;
     background-color: rgba(255, 255, 255, 0.979);
 
     /* Positioning it relative to .main-header */

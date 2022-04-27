@@ -2,8 +2,8 @@
 /*    HERO SECTION     */
 /***********************/
 .section-hero {
-  /* padding: 8rem 0; */
-  /* background-image: linear-gradient(
+  /* padding: 8rem 0;
+  background-image: linear-gradient(
       rgba(34, 34, 34, 0.582),
       rgba(34, 34, 34, 0)
     ),
@@ -14,18 +14,18 @@
 .container-hero {
   display: grid;
   grid-template-columns: 1fr;
-  height: 65rem;
   overflow: hidden;
   position: relative;
 }
 
-.hero-grid {
+.hero-video-grid {
   z-index: 5;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 130rem;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  padding: 0 3.2rem;
+  max-width: 130rem;
   margin: 0 auto;
-  padding: 2rem 0;
 }
 
 .program-name {
@@ -35,12 +35,31 @@
   color: #e2eeed;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 video {
   width: 100%;
   position: absolute;
 
   /*Does not need this anymore after setting position absolute?*/
   object-fit: cover;
+}
+
+.animated-text-container {
+  font-size: 25rem;
+  font-weight: 500;
+  height: 100%;
+  max-width: 130rem;
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
 }
 
 /***********************/

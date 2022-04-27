@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/index-animation.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <script defer src="js/oceanos-script.js"></script>
@@ -54,16 +55,30 @@
         <div class="container-hero">
           <!-- Video is in grid but absolutely positioned so does not take a space in it -->
           <video autoplay muted loop>
-            <source src="test_Trim.mp4" type="video/mp4" id="myVideo" />
+            <source src="background-video.mp4" type="video/mp4" id="myVideo" />
           </video>
+          <div class="animated-text-container">
+            <span class="flowing-letter">O</span>
+            <span class="flowing-letter">C</span>
+            <span class="flowing-letter">E</span>
+            <span class="flowing-letter">A</span>
+            <span class="flowing-letter">N</span>
+            <span class="flowing-letter">O</span>
+            <span class="flowing-letter">S</span>
+          </div>
 
-          <div class="hero-grid">
+          <div class="hero-video-grid">
             <div class="program-name">
               Ocean Community<br />
               Engagement and Awareness<br />
               using NASA Earth<br />
               Observations and Science
             </div>
+            <img
+              class="hero-image"
+              src="img/hero-image.png"
+              alt="Photo of sea life"
+            />
           </div>
         </div>
       </section>

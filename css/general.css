@@ -19,6 +19,11 @@ html {
   /* To hide the mobile navigation, which I set in the media query
     to translate 100% to the right, if I don't set this page will have a
     horizontal scroll bar.  Must set on html and body. */
+  /* On this page, overflow-x on both the body and html was giving me errors when scrolling,
+    scrolling would get stuck and only work if I moved the mouse,, was also giving me two scroll bars.
+    Left it here for now and mobile navigation doesn't seem to be showing (no horizontal scroll bar).
+    On the body I had to remove overflow-x and do overflow.  If I didn't set any overflow on the body,
+    the sticky navigation would show about a hudnred pixels down from the top of page*/
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -34,7 +39,7 @@ body {
   /* To hide the mobile navigation, which I set in the media query
     to translate 100% to the right, if I don't set this page will have a
     horizontal scroll bar.  Must set on html and body. */
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /***********************/
