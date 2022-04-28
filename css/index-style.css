@@ -44,7 +44,7 @@ video {
   position: absolute;
 
   /*Does not need this anymore after setting position absolute?*/
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .animated-text-container {
