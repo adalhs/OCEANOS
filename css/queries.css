@@ -65,6 +65,11 @@
     justify-self: center;
   }
 
+  /* MAKING MAIN PAGE REACTIVE AFTER VIDEO */
+  .hero-video-grid {
+    grid-template-columns: 1fr;
+  }
+
   /* CREATING MOBILE NAVIGATION */
   .btn-mobile-nav {
     /* Shows mobile navigation button */

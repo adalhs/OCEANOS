@@ -1,7 +1,7 @@
 /***********************/
 /*    TEXT ANIMATION   */
 /***********************/
-.flowing-letter {
+/* .flowing-letter {
   animation: water 7s;
   background-position: center;
   -webkit-background-clip: text;
@@ -23,7 +23,6 @@
   }
   75% {
     filter: brightness(0%);
-    /* Have to add a gradient on the image or the transition to 0% brightness loos too abrupt */
     background-image: linear-gradient(
         to right bottom,
         rgba(0, 0, 0, 0),
@@ -41,8 +40,6 @@ video,
   animation: brightness 10s;
   animation-delay: 8.6s;
   filter: brightness(0%);
-
-  /* Video retains 100% brightness from last keyframe */
   animation-fill-mode: forwards;
 }
 
@@ -82,4 +79,4 @@ span:nth-child(6) {
 
 span:nth-child(7) {
   animation-delay: 2.1s;
-}
+} */
