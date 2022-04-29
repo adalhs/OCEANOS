@@ -152,7 +152,8 @@ body {
   z-index: 999;
 }
 
-.sticky .page-header {
+.sticky .page-header,
+.sticky .section-hero {
   /* So the page doesn't "jump" when the navigation bar is taken out of flow when
   we set its position: fixed, we add its height as a margin to the top of the hero section */
   margin-top: 9.6rem;

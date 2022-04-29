@@ -106,19 +106,38 @@ video {
   letter-spacing: 0.75px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2.4rem;
+  margin: 1.5rem 0 1.5rem 0;
   color: #888;
 }
 
 .partner-logos {
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem 10rem 10rem;
+  margin-bottom: 10rem;
+  align-items: center;
 }
 
 .partner-logo {
-  height: 9rem;
+  height: 10rem;
   transition: all 0.3s;
+}
+
+.partner-logo.ecoexploratorio {
+  height: 6rem;
+}
+
+.partner-logo.intermetro {
+  height: 12.5rem;
+  padding-bottom: 3rem;
+}
+
+.partner-logo.sam {
+  height: 7rem;
+  padding-top: 1rem;
+}
+
+.partner-logo.uprrum {
+  height: 7.5rem;
 }
 
 .partner-logo:hover {
@@ -135,8 +154,8 @@ video {
   padding: 5rem 0 10rem 0;
   margin: 0 auto;
   align-items: center;
-  row-gap: 5rem;
-  column-gap: 10rem;
+  row-gap: 10rem;
+  column-gap: 5rem;
   font-size: 2rem;
   /* background-color: #cedddd; */
 }
@@ -144,7 +163,6 @@ video {
 .section-program-title {
   grid-column: 1 / -1;
   font-size: 4rem;
-  margin-bottom: 2.5rem;
 }
 
 .section-program-subheader {
@@ -155,8 +173,12 @@ video {
 
 .program-section-image {
   width: 70%;
-  border-radius: 40px;
+  border-radius: 60px;
   justify-self: center;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.301);
+
+  /* Makes image seem more natural with the white background*/
+  filter: contrast(90%);
 }
 
 .link-itinerary {
@@ -165,6 +187,7 @@ video {
   justify-self: center;
   grid-column: 1 / -1;
 }
+
 /***********************/
 /*   SECOND SECTION    */
 /***********************/
@@ -175,7 +198,8 @@ video {
 .team-container {
   /* background-color: #cedddd; */
   /* background-color: #e3f4f4; */
-  background-color: #e3f4f49c;
+  /* background-color: #e3f4f49c; */
+  background-color: transparent;
   max-width: 200rem;
   padding: 0 10rem;
   box-shadow: 0 0 0 none;
