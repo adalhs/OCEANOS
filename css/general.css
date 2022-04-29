@@ -37,7 +37,7 @@ body {
   font-weight: 400;
   font-size: 2rem;
   color: #555;
-  letter-spacing: 0.05rem;
+  /* letter-spacing: 0.05rem; */
 
   /* To hide the mobile navigation, which I set in the media query
     to translate 100% to the right, if I don't set this page will have a

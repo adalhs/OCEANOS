@@ -46,7 +46,7 @@
   color: #cdf3ef;
 }
 
-.program-description-or-logos {
+.program-description {
   color: #cedddd;
   grid-column: 2;
   opacity: 1;
@@ -60,7 +60,7 @@
   padding-top: 5rem;
 }
 
-video {
+.hero-video-background {
   width: 100%;
   position: absolute;
   filter: brightness(55%);
@@ -97,6 +97,10 @@ video {
   padding: 4.8rem 0 3.2rem 0;
   max-width: 130rem;
   margin: 0 auto;
+}
+
+.partner-entities {
+  padding: 0 5.2rem;
 }
 
 .partners-heading {
@@ -147,6 +151,10 @@ video {
 /***********************/
 /*  PROGRAM SECTION    */
 /***********************/
+.section-program {
+  padding: 0 5.2rem;
+}
+
 .container-program {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,7 +208,7 @@ video {
   /* background-color: #e3f4f4; */
   /* background-color: #e3f4f49c; */
   background-color: transparent;
-  max-width: 200rem;
+  max-width: 130rem;
   padding: 0 10rem;
   box-shadow: 0 0 0 none;
 }
@@ -213,7 +221,7 @@ video {
 }
 
 .members-grid {
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 5rem 0 5rem 0;
 }
 
 .team-overview {

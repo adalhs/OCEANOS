@@ -1,9 +1,8 @@
 /**************************/
 /*      BELOW 1344px      */
 /**************************/
-
-/******** GENERAL *********/
 @media (max-width: 84em) {
+  /******** GENERAL *********/
   html {
     font-size: 56.25%;
   }
@@ -12,9 +11,8 @@
 /**************************/
 /*       BELOW 1200px     */
 /**************************/
-
-/******* GENERAL **********/
 @media (max-width: 75em) {
+  /******* GENERAL **********/
   html {
     font-size: 50%;
   }
@@ -27,15 +25,35 @@
 /**************************/
 /*      BELOW 1040px      */
 /**************************/
-
-/********** GENERAL *******/
 @media (max-width: 65em) {
-  .program-name {
-    font-size: 4rem;
-  }
-
+  /********** GENERAL *******/
   .main-nav-list {
     gap: 4.5rem;
+  }
+
+  /****** MAIN PAGE ********/
+  /* Logos height property set to 15% smaller than original size */
+  .partner-logo {
+    height: 8.5rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 5rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 10.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .partner-logo.sam {
+    height: 6rem;
+    padding-top: 1rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 6.3rem;
   }
 
   /******** TEAM PAGE ******/
@@ -47,36 +65,13 @@
 /**************************/
 /*       BELOW 944px      */
 /**************************/
-
-/******* MAIN PAGE ********/
 @media (max-width: 59em) {
-  .container-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .program-name {
-    text-align: center;
-    padding: 3rem 10rem 0rem 10rem;
-    font-size: 4.5rem;
-  }
-
-  .hero-image {
-    width: 65%;
-    justify-self: center;
-  }
-
-  /* MAKING MAIN PAGE REACTIVE AFTER VIDEO */
-  .hero-video-grid {
-    grid-template-columns: 1fr;
-  }
-
   /* CREATING MOBILE NAVIGATION */
   .btn-mobile-nav {
     /* Shows mobile navigation button */
     display: block;
 
-    /* So that button shows on top of nav menu when it is open,
-        gave it a very high z-index because it doesn't matter as long as its high */
+    /* So that  menu/close button shows on top of nav menu when it is open*/
     z-index: 9999;
   }
 
@@ -145,6 +140,47 @@
     font-size: 3rem;
   }
 
+  /******* MAIN PAGE ********/
+  .main-header {
+    padding: 0.2rem 5.2rem 0.2rem 2.6rem;
+  }
+
+  .hero-video-background {
+    width: 130%;
+  }
+
+  .hero-logo {
+    width: 65%;
+  }
+
+  .partner-entities {
+    padding: 0 2.6rem;
+  }
+
+  /* Logos height property set to 15% smaller than previous query size */
+  .partner-logo {
+    height: 7.2rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 4.25rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 9rem;
+    padding-bottom: 2rem;
+  }
+
+  .partner-logo.sam {
+    height: 5rem;
+    padding-top: 1rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 5.3rem;
+  }
+
   /********* TEAM PAGE **********/
   .team-container {
     padding: 6rem 7rem;
@@ -190,17 +226,70 @@
 /**************************/
 /*       BELOW 704px      */
 /**************************/
-
-/******* MAIN PAGE ********/
 @media (max-width: 44em) {
-  .program-name {
+  /******* MAIN PAGE ********/
+  /* .program-name {
     text-align: center;
     padding: 3rem 0rem 0rem 0rem;
     font-size: 4rem;
+  } */
+
+  .main-header {
+    padding: 0.2rem 5.2rem 0.2rem 1.2rem;
   }
 
-  .hero-image {
+  .hero-video-background {
+    width: 160%;
+  }
+
+  .hero-video-grid {
+    column-gap: 5.5rem;
+    padding: 0 1.2rem;
+    grid-template-columns: 1fr 1.8fr;
+  }
+
+  .program-name {
+    font-size: 2rem;
+  }
+
+  .program-name span {
+    font-size: 6.2rem;
+  }
+
+  .program-description {
+    font-size: 1.7rem;
+  }
+
+  .hero-logo {
     width: 75%;
+  }
+
+  .partner-entities {
+    padding: 0 1.2rem;
+  }
+
+  /* Logos height property set to 17% smaller than previous query size */
+  .partner-logo {
+    height: 6rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 3.5rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 7.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .partner-logo.sam {
+    height: 4.15rem;
+    padding-top: 0.5rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 4.4rem;
   }
 
   /****** TEAM PAGE ********/
@@ -224,29 +313,82 @@
 /**************************/
 /*       BELOW 560px      */
 /**************************/
-
-/********* GENERAL ********/
 @media (max-width: 35em) {
+  /********* GENERAL ********/
   body {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   .main-header {
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 5.2rem 0.2rem 1.2rem;
   }
 
   /******* MAIN PAGE ******/
-  .program-name {
+  /* .program-name {
     text-align: center;
     padding: 3rem 0rem 1rem 0rem;
     font-size: 3.5rem;
+  } */
+
+  .hero-video-background {
+    width: 250%;
   }
 
-  .hero-image {
-    width: 100%;
-    padding-bottom: 2rem;
+  .hero-video-grid {
+    grid-template-columns: 1fr 1.4fr;
+    column-gap: 3.5rem;
   }
 
+  .program-name {
+    font-size: 1.6rem;
+    grid-row: 1 / 2;
+  }
+
+  .program-name span {
+    font-size: 3rem;
+  }
+
+  .program-description {
+    grid-column: 1 / -1;
+    padding-bottom: 6rem;
+  }
+
+  .hero-logo {
+    width: 110%;
+    padding-bottom: 5rem;
+  }
+
+  .section-partners {
+    padding: 3rem 0 3.2rem 0;
+  }
+
+  .partners-heading {
+    font-size: 1.4rem;
+  }
+
+  /* Logos height property set to 40% smaller than previous query size */
+  .partner-logo {
+    height: 2.35rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 1.4rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 4.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .partner-logo.sam {
+    height: 1.65rem;
+    padding-top: 0.25rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 1.75rem;
+  }
   /******** TEAM PAGE ******/
   .team-container {
     padding: 6rem 1.6rem;
@@ -270,3 +412,7 @@
     margin-bottom: 6rem;
   }
 }
+
+/**************************/
+/*       BELOW 375px      */
+/**************************/
