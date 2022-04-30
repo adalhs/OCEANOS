@@ -1,16 +1,6 @@
 /***********************/
 /*    HERO SECTION     */
 /***********************/
-.section-hero {
-  /* padding: 8rem 0;
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.582),
-      rgba(34, 34, 34, 0)
-    ),
-    url("../img/hero-background.jpg");
-  background-size: cover; */
-}
-
 .container-hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -63,7 +53,7 @@
 .hero-video-background {
   width: 100%;
   position: absolute;
-  filter: brightness(55%);
+  filter: brightness(65%);
 
   /*Does not need this anymore after setting position absolute?*/
   /* object-fit: cover; */
@@ -164,7 +154,6 @@
   align-items: center;
   row-gap: 10rem;
   column-gap: 5rem;
-  font-size: 2rem;
   /* background-color: #cedddd; */
 }
 

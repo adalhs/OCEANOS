@@ -32,6 +32,10 @@
   }
 
   /****** MAIN PAGE ********/
+  .program-section-image {
+    width: 85%;
+  }
+
   /* Logos height property set to 15% smaller than original size */
   .partner-logo {
     height: 8.5rem;
@@ -142,7 +146,7 @@
 
   /******* MAIN PAGE ********/
   .main-header {
-    padding: 0.2rem 5.2rem 0.2rem 2.6rem;
+    padding: 0.2rem 2.6rem 0.2rem 2.6rem;
   }
 
   .hero-video-background {
@@ -179,6 +183,14 @@
 
   .partner-logo.uprrum {
     height: 5.3rem;
+  }
+
+  .program-section-image {
+    width: 110%;
+  }
+
+  .container-program {
+    row-gap: 5rem;
   }
 
   /********* TEAM PAGE **********/
@@ -228,14 +240,8 @@
 /**************************/
 @media (max-width: 44em) {
   /******* MAIN PAGE ********/
-  /* .program-name {
-    text-align: center;
-    padding: 3rem 0rem 0rem 0rem;
-    font-size: 4rem;
-  } */
-
   .main-header {
-    padding: 0.2rem 5.2rem 0.2rem 1.2rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
 
   .hero-video-background {
@@ -292,6 +298,37 @@
     height: 4.4rem;
   }
 
+  .section-program {
+    padding: 0 1.2rem;
+  }
+
+  .container-program {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .section-program-title {
+    font-size: 3rem;
+  }
+
+  .section-program-subheader {
+    font-size: 2.5rem;
+  }
+
+  .program-section-image {
+    width: 65%;
+    margin-top: 5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.301);
+  }
+
+  .program-image1 {
+    grid-row: 2;
+  }
+
+  .program-image3 {
+    grid-row: 6;
+  }
+
   /****** TEAM PAGE ********/
   .team-container {
     padding: 6rem 4rem;
@@ -316,32 +353,31 @@
 @media (max-width: 35em) {
   /********* GENERAL ********/
   body {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .main-header {
-    padding: 0.2rem 5.2rem 0.2rem 1.2rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
 
   /******* MAIN PAGE ******/
-  /* .program-name {
-    text-align: center;
-    padding: 3rem 0rem 1rem 0rem;
-    font-size: 3.5rem;
-  } */
+  .container-hero {
+    height: 55rem;
+  }
 
   .hero-video-background {
     width: 250%;
   }
 
   .hero-video-grid {
-    grid-template-columns: 1fr 1.4fr;
-    column-gap: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 
   .program-name {
     font-size: 1.6rem;
     grid-row: 1 / 2;
+    line-height: 1.1;
   }
 
   .program-name span {
@@ -354,7 +390,7 @@
   }
 
   .hero-logo {
-    width: 110%;
+    width: 80%;
     padding-bottom: 5rem;
   }
 
@@ -389,6 +425,25 @@
   .partner-logo.uprrum {
     height: 1.75rem;
   }
+
+  .section-program {
+    padding: 0 1.2rem;
+  }
+
+  .section-program-title {
+    font-size: 2.1rem;
+  }
+
+  .section-program-subheader {
+    font-size: 2.1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .program-section-image {
+    border-radius: 30px;
+    margin-top: 2.5rem;
+  }
+
   /******** TEAM PAGE ******/
   .team-container {
     padding: 6rem 1.6rem;
@@ -412,7 +467,3 @@
     margin-bottom: 6rem;
   }
 }
-
-/**************************/
-/*       BELOW 375px      */
-/**************************/
