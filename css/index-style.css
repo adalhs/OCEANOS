@@ -1,41 +1,96 @@
 /***********************/
 /*    HERO SECTION     */
 /***********************/
-.section-hero {
-  /* padding: 8rem 0; */
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.582),
-      rgba(34, 34, 34, 0)
-    ),
-    url("../img/hero-background.jpg");
-  background-size: cover;
+.container-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  position: relative;
+  height: 65rem;
 }
 
-.container-hero {
+.hero-video-grid {
+  z-index: 5;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
+  padding: 0 3.2rem;
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  column-gap: 10rem;
 }
 
 .program-name {
-  font-size: 4.4rem;
-  line-height: 1.6;
-  font-weight: 500;
-  color: #e2eeed;
+  font-size: 2.25rem;
+  line-height: 0.95;
+  color: #cedddd;
+  opacity: 0.85;
+  grid-row: 1 / 3;
+  padding: 6rem 0;
+  justify-self: center;
 }
 
-.hero-image {
-  width: 100%;
+.program-name span {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #cdf3ef;
 }
+
+.program-description {
+  color: #cedddd;
+  grid-column: 2;
+  opacity: 1;
+  justify-self: center;
+  padding: 0rem 1rem 5rem 1rem;
+}
+
+.hero-logo {
+  width: 50%;
+  justify-self: center;
+  padding-top: 5rem;
+}
+
+.hero-video-background {
+  width: 100%;
+  position: absolute;
+  filter: brightness(65%);
+
+  /*Does not need this anymore after setting position absolute?*/
+  /* object-fit: cover; */
+}
+
+/* BOOTSTRAP */
+/* .carousel-item img {
+  border-radius: 60%;
+  opacity: 0.85;
+} */
+
+/* .animated-text-container {
+  font-size: 25rem;
+  font-weight: 500;
+  height: 100%;
+  max-width: 130rem;
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+} */
 
 /***********************/
 /*  PARTNERS SECTION   */
 /***********************/
 .section-partners {
   padding: 4.8rem 0 3.2rem 0;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.partner-entities {
+  padding: 0 5.2rem;
 }
 
 .partners-heading {
@@ -45,25 +100,124 @@
   letter-spacing: 0.75px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2.4rem;
-  color: #555;
+  margin: 1.5rem 0 1.5rem 0;
+  /* color: #888; */
+  color: #084141d3;
 }
 
 .partner-logos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  align-items: center;
 }
 
 .partner-logo {
-  height: 9rem;
+  height: 10rem;
   transition: all 0.3s;
+}
+
+.partner-logo.ecoexploratorio {
+  height: 6rem;
+}
+
+.partner-logo.intermetro {
+  height: 12.5rem;
+  padding-bottom: 3rem;
+}
+
+.partner-logo.sam {
+  height: 7rem;
+  padding-top: 1rem;
+}
+
+.partner-logo.uprrum {
+  height: 7.5rem;
 }
 
 .partner-logo:hover {
   transform: scale(1.1);
 }
 
-/*********************************************/
-.mock {
-  max-width: 50rem;
+/***********************/
+/*  PROGRAM SECTION    */
+/***********************/
+.section-program {
+  padding: 0 5.2rem;
+}
+
+.container-of-section-program {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  padding: 5rem 0 10rem 0;
+  margin: 0 auto;
+  align-items: center;
+  row-gap: 7.5rem;
+  column-gap: 5rem;
+  /* background-color: #cedddd; */
+}
+
+.section-program-title {
+  grid-column: 1 / -1;
+  font-size: 4rem;
+  color: #084141d3;
+}
+
+.section-program-subheader {
+  font-size: 3rem;
+  font-weight: 500;
+  display: block;
+  color: #084141d3;
+}
+
+.program-section-image {
+  width: 70%;
+  border-radius: 60px;
+  justify-self: center;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.301);
+
+  /* Makes image seem more natural with the white background*/
+  filter: contrast(90%);
+}
+
+.program-image1 {
+  padding-top: 0.5rem;
+}
+
+.link-itinerary {
+  display: block;
+  text-align: center;
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+
+/***********************/
+/*     TEAM SECTION    */
+/***********************/
+.section-team {
+  padding: 0 5.2rem;
+  background-color: #e3f4f49c;
+}
+
+.container-of-section-team {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 130rem;
+  padding: 8rem 0 10rem 0;
+  row-gap: 5rem;
+  margin: 0 auto;
+  background-color: transparent;
+  justify-items: center;
+}
+
+.section-team-title {
+  font-size: 4rem;
+  color: #084141d3;
+}
+
+.team-group-image {
+  width: 90%;
+  border-radius: 60px;
+  margin-bottom: 2rem;
 }

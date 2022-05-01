@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
 
+    <!--  Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Rubik Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -13,6 +24,8 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index-style.css" />
+
+    <link rel="stylesheet" href="css/index-animation.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <script defer src="js/oceanos-script.js"></script>
@@ -52,19 +65,46 @@
     <main>
       <section class="section-hero for-sticky">
         <div class="container-hero">
-          <!-- Line breaks (<br />) only apply once viewport width is small enough for
-          .program-name to occupy a row by itself -->
-          <div class="program-name">
-            Ocean Community<br />
-            Engagement and Awareness<br />
-            using NASA Earth<br />
-            Observations and Science
+          <!-- Video is in grid but absolutely positioned so does not take a space in it -->
+          <video class="hero-video-background" autoplay muted playsinline loop>
+            <source src="background-video.mp4" type="video/mp4" id="myVideo" />
+          </video>
+          <!-- <div class="animated-text-container">
+            <span class="flowing-letter">O</span>
+            <span class="flowing-letter">C</span>
+            <span class="flowing-letter">E</span>
+            <span class="flowing-letter">A</span>
+            <span class="flowing-letter">N</span>
+            <span class="flowing-letter">O</span>
+            <span class="flowing-letter">S</span>
+          </div> -->
+
+          <div class="hero-video-grid">
+            <div class="program-name">
+              <span>O</span>CEAN<br />
+              <span>C</span>OMMUNITY<br />
+              <span>E</span>NGAGEMENT AND<br />
+              <span>A</span>WARENESS USING<br />
+              <span>N</span>ASA EARTH<br />
+              <span>O</span>BSERVATIONS AND<br />
+              <span>S</span>CIENCE
+            </div>
+            <img
+              class="hero-logo"
+              src="img/oceanos-logo.png"
+              alt="OCEANOS logo"
+            />
+            <div class="program-description">
+              <p>
+                The OCEANOS project centers on the hypothesis of: NASA
+                Observations and science coupled with low-cost in-water
+                instrumentation can significantly increase STEM education and
+                enthusiasm among low-income 1st generation Hispanic/Latino
+                students, particularly in regard to oceanographic and coastal
+                issues.
+              </p>
+            </div>
           </div>
-          <img
-            class="hero-image"
-            src="img/hero-image.png"
-            alt="Photo of sea life"
-          />
         </div>
       </section>
 
@@ -76,6 +116,38 @@
           <div class="partner-logos">
             <a class="partner-link" href="#"
               ><img
+                class="partner-logo uprrum"
+                src="img/uprrum-logo.jpg"
+                alt="Universidad de Puerto Rico Recinto Universitario de Mayaguez logo"
+            /></a>
+            <a class="partner-link" href="#"
+              ><img
+                class="partner-logo sam"
+                src="img/sam-logo.png"
+                alt="Sociedad Ambiente Marino logo"
+            /></a>
+
+            <!-- <a class="partner-link" href="#"
+              ><img
+                class="partner-logo"
+                src="img/nasa-logo.png"
+                alt="NASA logo"
+            /></a> -->
+
+            <a class="partner-link" href="#"
+              ><img
+                class="partner-logo intermetro"
+                src="img/intermetro-logo.png"
+                alt="Inter American Univerity of Puerto Rico Metropolitan Campus logo"
+            /></a>
+            <a class="partner-link" href="#"
+              ><img
+                class="partner-logo ecoexploratorio"
+                src="img/ecoexploratorio-logo.png"
+                alt="Ecoexploratorio logo"
+            /></a>
+            <a class="partner-link" href="#"
+              ><img
                 class="partner-logo"
                 src="img/taller-ecologico-logo.png"
                 alt="Taller Ecologico de Puerto Rico logo"
@@ -83,7 +155,110 @@
           </div>
         </div>
       </section>
+
+      <!-- PROGRAM SECTION -->
+      <section class="section-of-main-page section-program">
+        <div class="container-of-section-program">
+          <span class="section-title section-program-title half-a-border-on-top"
+            >ABOUT THE PROGRAM</span
+          >
+          <p class="program-text">
+            <span class="section-program-subheader">Create awareness</span>
+            The importance of the ocean is undeniable, not only for humans but
+            for life on Earth. Coastal and ocean ecosystems in Latin America
+            have degraded over the last century. This is related to several
+            global (climate change) and regional/local (land-based sources or
+            pollution, indiscriminate recreational use) factors. At the local
+            level, there is a general lack of awareness on how human actions
+            ultimately impact the ocean and the overall survival of the
+            communities associated with these. The project aims at increasing
+            STEM opportunities among the fastest growing ethnic group in the US
+            (Hispanic/Latinos) using as a spearhead the low-income Puerto Rican
+            student population within the Island.
+          </p>
+          <img
+            class="program-section-image program-image1"
+            src="img/program-section-image1.jpg"
+            alt="Photo of sea life"
+          />
+          <img
+            class="program-section-image"
+            src="img/program-section-image2.jpg"
+            alt="Photo of sea life"
+          />
+          <p class="program-text">
+            <span class="section-program-subheader"
+              >Using NASA ocean color data</span
+            >The OCEANOS project centers on the hypothesis of: NASA Observations
+            and science coupled with low-cost in-water instrumentation can
+            significantly increase STEM education and enthusiasm among
+            low-income 1st generation Hispanic/Latino students, particularly in
+            regard to oceanographic and coastal issues. Our goal is to use
+            combined NASA ocean color data and in situ oceanographic parameters
+            to improve the capacity and awareness among low-income students on
+            how these two can be used to monitor water quality affecting coastal
+            shallow-water marine ecosystems in Caribbean waters.
+          </p>
+          <p class="program-text">
+            <span class="section-program-subheader">Capacitate students</span>We
+            are partnering with local NGOs and academic institutions in Puerto
+            Rico dedicated to capacitating low-income students on STEM careers.
+            We are particularly interested in engaging with high schoolers and
+            first-generation university students who would otherwise not have
+            this opportunity. Trainings will consist of basic remote sensing
+            image analysis techniques for ocean color and water quality
+            assessment, coupled with the design of do-it-yourself (DIY)
+            instrumentation for collection of in situ water quality parameters,
+            and general benthic characterization of tropical shallow-water
+            ecosystems with NASA’s award-winning NeMO-Net application.
+          </p>
+          <img
+            class="program-section-image program-image3"
+            src="img/program-section-image3.jpg"
+            alt="Photo of sea life"
+          />
+          <a class="link link-itinerary" href="program.html"
+            >See program itinerary &rarr;</a
+          >
+        </div>
+      </section>
+
+      <!-- TEAM SECTION -->
+      <section class="section-of-main-page section-team">
+        <div class="container-of-section-team">
+          <span class="section-title section-team-title half-a-border-on-top"
+            >ABOUT THE TEAM</span
+          >
+          <p class="team-overview">
+            The OCEANOS team is made up of individuals from... Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Rerum reiciendis eos,
+            error quod asperiores dignissimos itaque blanditiis fugiat molestiae
+            eveniet consequatur maxime non esse quas voluptate labore alias
+            deleniti id. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Veniam corporis consequatur voluptatibus quod itaque,
+            inventore earum soluta vero eos quis dolor reprehenderit dolore quam
+            harum sapiente hic dolorum nesciunt. Quas. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Sapiente inventore consequuntur
+            eveniet alias amet aliquam sunt quos repellat, delectus hic autem
+            tempore cumque, laudantium minus repudiandae ad. Atque, harum unde.
+            Lorem ipsum dolor
+          </p>
+          <img
+            class="team-group-image"
+            src="img/oceanos-team.jpg"
+            alt="Photo of the OCEANOS team"
+          />
+          <a class="link link-team" href="team.html">Meet the team &rarr;</a>
+        </div>
+      </section>
     </main>
+    <!-- THIS IS FOR THE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FOR THE MOBILE MENU/CLOSE ICONS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

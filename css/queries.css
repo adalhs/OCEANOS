@@ -1,9 +1,8 @@
 /**************************/
 /*      BELOW 1344px      */
 /**************************/
-
-/******** GENERAL *********/
 @media (max-width: 84em) {
+  /******** GENERAL *********/
   html {
     font-size: 56.25%;
   }
@@ -12,9 +11,8 @@
 /**************************/
 /*       BELOW 1200px     */
 /**************************/
-
-/******* GENERAL **********/
 @media (max-width: 75em) {
+  /******* GENERAL **********/
   html {
     font-size: 50%;
   }
@@ -27,15 +25,39 @@
 /**************************/
 /*      BELOW 1040px      */
 /**************************/
-
-/********** GENERAL *******/
 @media (max-width: 65em) {
-  .program-name {
-    font-size: 4rem;
-  }
-
+  /********** GENERAL *******/
   .main-nav-list {
     gap: 4.5rem;
+  }
+
+  /****** MAIN PAGE ********/
+  .program-section-image {
+    width: 85%;
+  }
+
+  /* Logos height property set to 15% smaller than original size */
+  .partner-logo {
+    height: 8.5rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 5rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 10.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .partner-logo.sam {
+    height: 6rem;
+    padding-top: 1rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 6.3rem;
   }
 
   /******** TEAM PAGE ******/
@@ -47,35 +69,18 @@
 /**************************/
 /*       BELOW 944px      */
 /**************************/
-
-/******* MAIN PAGE ********/
 @media (max-width: 59em) {
-  .container-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .program-name {
-    text-align: center;
-    padding: 3rem 10rem 0rem 10rem;
-    font-size: 4.5rem;
-  }
-
-  .hero-image {
-    width: 65%;
-    justify-self: center;
-  }
-
   /* CREATING MOBILE NAVIGATION */
   .btn-mobile-nav {
     /* Shows mobile navigation button */
     display: block;
 
-    /* So that button shows on top of nav menu when it is open,
-        gave it a very high z-index because it doesn't matter as long as its high */
+    /* So that  menu/close button shows on top of nav menu when it is open*/
     z-index: 9999;
   }
 
   .main-nav-list {
+    z-index: 999;
     background-color: rgba(255, 255, 255, 0.979);
 
     /* Positioning it relative to .main-header */
@@ -137,6 +142,60 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+    border-top: 1px solid rgba(196, 109, 77, 0.842);
+  }
+
+  /******* MAIN PAGE ********/
+  .main-header {
+    padding: 0.2rem 2.6rem 0.2rem 2.6rem;
+  }
+
+  .hero-video-background {
+    width: 130%;
+  }
+
+  .hero-logo {
+    width: 65%;
+  }
+
+  .partner-entities {
+    padding: 0 2.6rem;
+  }
+
+  .partner-logos {
+    margin-bottom: 2rem;
+  }
+
+  /* Logos height property set to 15% smaller than previous query size */
+  .partner-logo {
+    height: 7.2rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 4.25rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 9rem;
+    padding-bottom: 2rem;
+  }
+
+  .partner-logo.sam {
+    height: 5rem;
+    padding-top: 1rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 5.3rem;
+  }
+
+  .program-section-image {
+    width: 110%;
+  }
+
+  .container-of-section-program {
+    row-gap: 5rem;
   }
 
   /********* TEAM PAGE **********/
@@ -184,17 +243,103 @@
 /**************************/
 /*       BELOW 704px      */
 /**************************/
-
-/******* MAIN PAGE ********/
 @media (max-width: 44em) {
-  .program-name {
-    text-align: center;
-    padding: 3rem 0rem 0rem 0rem;
-    font-size: 4rem;
+  /******* MAIN PAGE ********/
+  .main-header {
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
 
-  .hero-image {
+  .hero-video-background {
+    width: 160%;
+  }
+
+  .hero-video-grid {
+    column-gap: 5.5rem;
+    padding: 0 1.2rem;
+    grid-template-columns: 1fr 1.8fr;
+  }
+
+  .program-name {
+    font-size: 2rem;
+  }
+
+  .program-name span {
+    font-size: 6.2rem;
+  }
+
+  .program-description {
+    font-size: 1.7rem;
+  }
+
+  .hero-logo {
     width: 75%;
+  }
+
+  .partner-entities {
+    padding: 0 1.2rem;
+  }
+
+  /* Logos height property set to 17% smaller than previous query size */
+  .partner-logo {
+    height: 6rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 3.5rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 7.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .partner-logo.sam {
+    height: 4.15rem;
+    padding-top: 0.5rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 4.4rem;
+  }
+
+  .section-of-main-page {
+    padding: 0 1.2rem;
+  }
+
+  .container-of-section-program {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-program-subheader {
+    font-size: 2.5rem;
+  }
+
+  .program-section-image {
+    width: 65%;
+    margin-top: 5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.301);
+  }
+
+  .program-image1 {
+    grid-row: 2;
+  }
+
+  .program-image3 {
+    grid-row: 6;
+  }
+
+  .container-of-section-team {
+    padding: 2.8rem 0 10rem 0;
+  }
+
+  .team-group-image {
+    margin-bottom: 0;
   }
 
   /****** TEAM PAGE ********/
@@ -218,27 +363,119 @@
 /**************************/
 /*       BELOW 560px      */
 /**************************/
-
-/********* GENERAL ********/
 @media (max-width: 35em) {
+  /********* GENERAL ********/
   body {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 
   .main-header {
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
 
   /******* MAIN PAGE ******/
-  .program-name {
-    text-align: center;
-    padding: 3rem 0rem 1rem 0rem;
-    font-size: 3.5rem;
+  .container-hero {
+    height: 55rem;
   }
 
-  .hero-image {
-    width: 100%;
-    padding-bottom: 2rem;
+  .hero-video-background {
+    width: 250%;
+  }
+
+  .hero-video-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .program-name {
+    font-size: 1.6rem;
+    grid-row: 1 / 2;
+    line-height: 1.1;
+  }
+
+  .program-name span {
+    font-size: 3rem;
+  }
+
+  .program-description {
+    grid-column: 1 / -1;
+    padding-bottom: 6rem;
+  }
+
+  .hero-logo {
+    width: 80%;
+    padding-bottom: 5rem;
+  }
+
+  .section-partners {
+    padding: 3rem 0 3.2rem 0;
+  }
+
+  .partners-heading {
+    font-size: 1.4rem;
+  }
+
+  .partner-logos {
+    padding-bottom: 0;
+  }
+
+  /* Logos height property set to 40% smaller than previous query size */
+  .partner-logo {
+    height: 2.35rem;
+    transition: all 0.3s;
+  }
+
+  .partner-logo.ecoexploratorio {
+    height: 1.4rem;
+  }
+
+  .partner-logo.intermetro {
+    height: 4.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .partner-logo.sam {
+    height: 1.65rem;
+    padding-top: 0.25rem;
+  }
+
+  .partner-logo.uprrum {
+    height: 1.75rem;
+  }
+
+  .section-of-main-page {
+    padding: 0 1.2rem;
+  }
+
+  .container-of-section-program {
+    padding: 2rem 0 10rem 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-program-subheader {
+    font-size: 2.3rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .program-section-image {
+    border-radius: 30px;
+    margin-top: 2.5rem;
+  }
+
+  .container-of-section-team {
+    row-gap: 3rem;
+    padding: 4rem 0 10rem 0;
+  }
+
+  .team-group-image {
+    border-radius: 30px;
+  }
+
+  .link-team {
+    margin-top: 1rem;
   }
 
   /******** TEAM PAGE ******/
