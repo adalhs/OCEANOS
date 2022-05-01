@@ -3,6 +3,8 @@
 
 /* POSSIBLE COLOR FOR NAV AND INTERCALATED SECTIONS: #e3f4f49c
 /* POSSIBLE CORAL COLOR FOR ACCENTS AND HOVERED LINKS: rgba(196, 109, 77, 0.842)
+/* POSSIBLE BLUE COLOR FOR SECTION HEADINGS: #084141d3
+
 
 /***********************/
 /*        GENERAL      */
@@ -85,7 +87,8 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
+  color: #084141d3;
   font-size: 1.8rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -94,7 +97,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #0b7285;
+  color: rgba(201, 124, 97, 0.842);
   font-size: 2rem;
   transform: translateY(-0.3rem);
 }
@@ -163,14 +166,14 @@ body {
 /*         MISCELLANEOUS STYLES         */
 /****************************************/
 .half-a-border-on-top {
-  border-top: 1px solid #555;
-  border-image: linear-gradient() 100% 1;
+  /* border-top: 1px solid #555; */
+  border-top: 2px solid rgba(201, 124, 97, 0.842);
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #0b7285;
+  color: #084141d3;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -179,6 +182,6 @@ body {
 
 .link:hover,
 .link:active {
-  color: #298383;
+  color: rgba(201, 124, 97, 0.842);
   border-bottom: 1px solid transparent;
 }
