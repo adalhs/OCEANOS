@@ -1,9 +1,8 @@
 /* DEFAULT TEXT COLOR: #555
-/* DEFAULT BANNER TEXT COLOR (TEAM SECTION): #cedddd;
-
-/* POSSIBLE COLOR FOR NAV AND INTERCALATED SECTIONS: #e3f4f49c
-/* POSSIBLE CORAL COLOR FOR ACCENTS AND HOVERED LINKS: rgba(196, 109, 77, 0.842)
-/* POSSIBLE BLUE COLOR FOR SECTION HEADINGS: #084141d3
+/* DEFAULT TEXT COLOR TO GO ON TOP OF WATER BANNER: #cedddd;
+/* DEFAULT COLOR FOR INTERCALATED SECTIONS: #e3f4f49c
+/* DEFAULT CORAL COLOR FOR ACCENTS AND HOVERED LINKS: rgba(196, 109, 77, 0.842)
+/* DEFAULT BLUE COLOR FOR SECTION HEADINGS: #084141d3
 
 
 /***********************/
@@ -98,8 +97,46 @@ body {
 .main-nav-link:hover,
 .main-nav-link:active {
   color: rgba(201, 124, 97, 0.842);
-  font-size: 2rem;
-  transform: translateY(-0.3rem);
+}
+
+/* Navigation sublinks */
+.main-nav-link {
+  position: relative;
+}
+
+.submenu-list {
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  background-color: #fff;
+  z-index: 999;
+  padding: 2rem 1rem 0.25rem 1rem;
+  border-radius: 5px;
+  display: none;
+}
+
+.submenu-list li {
+  padding-top: 0.5rem;
+}
+
+.main-nav-list-item:hover .submenu-list {
+  /* this */
+  /* display: flex;
+  flex-direction: column;
+  transform: translate(100%, -50%); */
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-list li .main-nav-sublink {
+  text-decoration: none;
+  color: #084141d3;
+  transition: all 0.3s;
+  font-family: "Dubai", "sans-serif";
+}
+
+.submenu-list li .main-nav-sublink:hover {
+  color: rgba(201, 124, 97, 0.842);
 }
 
 /* MOBILE NAVIGATION*/

@@ -8,10 +8,20 @@ btnNavElement.addEventListener("click", function () {
 });
 
 //////////////////////////////////////////////////
-// Close mobile navigation after a link is clicked
+// Close mobile navigation after a main-nav-link link is clicked
 const mobileNavLink = document.querySelectorAll(".main-nav-link:link");
 
 mobileNavLink.forEach((i) => {
+  i.addEventListener("click", function () {
+    mainHeaderElement.classList.toggle("nav-open");
+  });
+});
+
+//////////////////////////////////////////////////
+// Close mobile navigation after a main-nav-sublink link is clicked
+const mobileNavSublink = document.querySelectorAll(".main-nav-sublink:link");
+
+mobileNavSublink.forEach((i) => {
   i.addEventListener("click", function () {
     mainHeaderElement.classList.toggle("nav-open");
   });

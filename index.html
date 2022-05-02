@@ -34,6 +34,7 @@
   </head>
   <body>
     <!-- NAVIGATION -->
+    <!-- Logos -->
     <header class="main-header">
       <nav class="main-nav">
         <div class="logos">
@@ -44,13 +45,48 @@
             <img src="img/oceanos-logo.png" class="logo" alt="OCEANOS logo" />
           </a>
         </div>
+
+        <!-- Links -->
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">The Program</a></li>
-          <li><a class="main-nav-link" href="team.html">The Team</a></li>
-          <li><a class="main-nav-link" href="#">News & Events</a></li>
-          <li><a class="main-nav-link" href="#">Gallery</a></li>
-          <li><a class="main-nav-link" href="#">Participate</a></li>
-          <li><a class="main-nav-link" href="#">Contact Us</a></li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#program">The Program</a>
+            <ul class="submenu-list">
+              <li>
+                <a class="main-nav-sublink" href="#program"
+                  >About the program</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-sublink" href="#">Program itinerary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#team">The Team</a>
+            <ul class="submenu-list">
+              <li>
+                <a class="main-nav-sublink" href="#team">About the team</a>
+              </li>
+              <li>
+                <a class="main-nav-sublink" href="team.html">Meet the team</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">News & Events</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Gallery</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Participate</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Contact Us</a>
+          </li>
         </ul>
 
         <!-- Mobile Navigation Button -->
@@ -80,7 +116,8 @@
           </div> -->
 
           <div class="hero-video-grid">
-            <div class="program-name">
+            <!-- translate="no" on this so acrostic doesn't get messed up on translation -->
+            <div translate="no" class="program-name">
               <span>O</span>CEAN<br />
               <span>C</span>OMMUNITY<br />
               <span>E</span>NGAGEMENT AND<br />
@@ -114,13 +151,13 @@
           <h2 class="partners-heading">Partner Organizations</h2>
 
           <div class="partner-logos">
-            <a class="partner-link" href="#"
+            <a class="partner-link" href="https://www.uprm.edu/portada/"
               ><img
                 class="partner-logo uprrum"
                 src="img/uprrum-logo.jpg"
                 alt="Universidad de Puerto Rico Recinto Universitario de Mayaguez logo"
             /></a>
-            <a class="partner-link" href="#"
+            <a class="partner-link" href="https://sampr.org/"
               ><img
                 class="partner-logo sam"
                 src="img/sam-logo.png"
@@ -134,19 +171,19 @@
                 alt="NASA logo"
             /></a> -->
 
-            <a class="partner-link" href="#"
+            <a class="partner-link" href="https://metro.inter.edu/"
               ><img
                 class="partner-logo intermetro"
                 src="img/intermetro-logo.png"
                 alt="Inter American Univerity of Puerto Rico Metropolitan Campus logo"
             /></a>
-            <a class="partner-link" href="#"
+            <a class="partner-link" href="https://ecoexploratorio.org/"
               ><img
                 class="partner-logo ecoexploratorio"
                 src="img/ecoexploratorio-logo.png"
                 alt="Ecoexploratorio logo"
             /></a>
-            <a class="partner-link" href="#"
+            <a class="partner-link" href="https://www.tallerecologicopr.com/"
               ><img
                 class="partner-logo"
                 src="img/taller-ecologico-logo.png"
@@ -157,7 +194,7 @@
       </section>
 
       <!-- PROGRAM SECTION -->
-      <section class="section-of-main-page section-program">
+      <section class="section-of-main-page section-program" id="program">
         <div class="container-of-section-program">
           <span class="section-title section-program-title half-a-border-on-top"
             >ABOUT THE PROGRAM</span
@@ -224,7 +261,7 @@
       </section>
 
       <!-- TEAM SECTION -->
-      <section class="section-of-main-page section-team">
+      <section class="section-of-main-page section-team" id="team">
         <div class="container-of-section-team">
           <span class="section-title section-team-title half-a-border-on-top"
             >ABOUT THE TEAM</span

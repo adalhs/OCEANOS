@@ -2,7 +2,7 @@
 /*      BELOW 1344px      */
 /**************************/
 @media (max-width: 84em) {
-  /******** GENERAL *********/
+  /********** GENERAL ***********/
   html {
     font-size: 56.25%;
   }
@@ -12,7 +12,7 @@
 /*       BELOW 1200px     */
 /**************************/
 @media (max-width: 75em) {
-  /******* GENERAL **********/
+  /********** GENERAL ***********/
   html {
     font-size: 50%;
   }
@@ -26,12 +26,12 @@
 /*      BELOW 1040px      */
 /**************************/
 @media (max-width: 65em) {
-  /********** GENERAL *******/
+  /********** GENERAL ***********/
   .main-nav-list {
     gap: 4.5rem;
   }
 
-  /****** MAIN PAGE ********/
+  /********* MAIN PAGE **********/
   .program-section-image {
     width: 85%;
   }
@@ -60,7 +60,7 @@
     height: 6.3rem;
   }
 
-  /******** TEAM PAGE ******/
+  /********** TEAM PAGE *********/
   .team-container {
     padding: 6rem 8rem;
   }
@@ -70,12 +70,13 @@
 /*       BELOW 944px      */
 /**************************/
 @media (max-width: 59em) {
+  /********** GENERAL ***********/
   /* CREATING MOBILE NAVIGATION */
   .btn-mobile-nav {
     /* Shows mobile navigation button */
     display: block;
 
-    /* So that  menu/close button shows on top of nav menu when it is open*/
+    /* So that menu/close button shows on top of nav menu when it is open*/
     z-index: 9999;
   }
 
@@ -99,7 +100,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4.8rem;
+    gap: 6rem;
 
     transition: all 0.5s;
 
@@ -145,7 +146,26 @@
     border-top: 1px solid rgba(196, 109, 77, 0.842);
   }
 
-  /******* MAIN PAGE ********/
+  /* REARRANGEMENT TO ALLOW FOR PROPER PLACING OF SUBLINKS IN MOBILE NAVIGATION */
+  .main-nav-list-item {
+    width: 75%;
+  }
+
+  .nav-open .submenu-list {
+    display: flex;
+    padding: 0;
+  }
+
+  .nav-open .main-nav-sublink {
+    padding-left: 4rem;
+  }
+
+  .nav-open .main-nav-list-item:hover .submenu-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /********* MAIN PAGE **********/
   .main-header {
     padding: 0.2rem 2.6rem 0.2rem 2.6rem;
   }
@@ -244,7 +264,25 @@
 /*       BELOW 704px      */
 /**************************/
 @media (max-width: 44em) {
-  /******* MAIN PAGE ********/
+  /********** GENERAL ***********/
+  /*MAKING MOBILE NAVIGATION SMALLER*/
+  .main-nav-list-item {
+    width: 80%;
+  }
+
+  .nav-open .main-nav-link {
+    font-size: 2.3rem;
+  }
+
+  .nav-open .main-nav-sublink {
+    padding-left: 3.5rem;
+  }
+
+  .main-nav-sublink {
+    font-size: 1.9rem;
+  }
+
+  /********* MAIN PAGE **********/
   .main-header {
     padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
@@ -342,7 +380,7 @@
     margin-bottom: 0;
   }
 
-  /****** TEAM PAGE ********/
+  /********* TEAM PAGE **********/
   .team-container {
     padding: 6rem 4rem;
   }
@@ -364,7 +402,7 @@
 /*       BELOW 560px      */
 /**************************/
 @media (max-width: 35em) {
-  /********* GENERAL ********/
+  /********** GENERAL ***********/
   body {
     font-size: 1.7rem;
   }
@@ -373,7 +411,20 @@
     padding: 0.2rem 1.2rem 0.2rem 1.2rem;
   }
 
-  /******* MAIN PAGE ******/
+  /*MAKING MOBILE NAVIGATION SMALLER*/
+  .main-nav-list-item {
+    width: 105%;
+  }
+
+  .nav-open .main-nav-sublink {
+    padding-left: 2rem;
+  }
+
+  .main-nav-sublink {
+    font-size: 1.7rem;
+  }
+
+  /********** MAIN PAGE *********/
   .container-hero {
     height: 55rem;
   }
@@ -478,7 +529,7 @@
     margin-top: 1rem;
   }
 
-  /******** TEAM PAGE ******/
+  /********** TEAM PAGE *********/
   .team-container {
     padding: 6rem 1.6rem;
   }
