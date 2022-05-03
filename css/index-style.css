@@ -155,7 +155,6 @@
   align-items: center;
   row-gap: 7.5rem;
   column-gap: 5rem;
-  /* background-color: #cedddd; */
 }
 
 .section-program-title {
@@ -180,8 +179,6 @@
 }
 
 .link-itinerary {
-  display: block;
-  text-align: center;
   justify-self: center;
   grid-column: 1 / -1;
 }
@@ -215,7 +212,8 @@
 /* NEWS/EVENTS SECTION */
 /***********************/
 .section-news-events {
-  padding: 10rem 5.2rem 0 5.2rem;
+  padding: 10rem 5.2rem 5rem 5.2rem;
+  background-color: #e3f4f49c;
 }
 
 .container-of-section-news-events {
@@ -224,7 +222,15 @@
   grid-template-columns: 1fr;
   margin: 0 auto;
   row-gap: 7.5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
+}
+
+.section-title {
+  justify-self: center;
+}
+
+.carousel-item img {
+  border-radius: 30px;
 }
 
 .carousel-item::after {
@@ -235,12 +241,18 @@
   left: 0;
   right: 0;
   width: 95%;
+  border-radius: 30px;
+
   /* centering after 95% width so it doesn't stick out of photo*/
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.164);
+
+  background: rgba(0, 0, 0, 0.115);
 
   /* So I can click through the background to the image link */
   pointer-events: none;
+
+  /* To soften part black background which juts out of image */
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.171);
 }
 
 .carousel-caption {
@@ -259,4 +271,140 @@
 
   /* Shadow with high blur to soften the edges of the p due to the background-color */
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.418);
+}
+
+.link-events {
+  justify-self: center;
+}
+
+/*******************************/
+/*    TESTIMONIALS SECTION     */
+/*******************************/
+.section-testimonials {
+  /* background-color: #e3f4f49c; */
+  padding: 10rem 5.2rem 0 5.2rem;
+  margin-bottom: 10rem;
+}
+
+.container-of-section-testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  row-gap: 7.5rem;
+  margin-bottom: 8rem;
+}
+
+.testimonial-card {
+  background-color: #d7f5f5c4;
+  border-radius: 8px;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.testimonial-card-left {
+  padding: 3rem 5rem 3rem 8rem;
+  margin-right: 10rem;
+}
+
+.testimonial-card-right {
+  padding: 3rem 8rem 3rem 5rem;
+  margin-left: 10rem;
+}
+
+.testimonial-image {
+  height: 20rem;
+  border-radius: 50%;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgb(0, 0, 0, 0.25);
+}
+
+.testimonial-text {
+  margin-bottom: 3.2rem;
+  color: #084141d3;
+}
+.testimonial-author {
+  font-size: 1.6rem;
+  color: #084141d3;
+}
+
+.link-testimonials {
+  justify-self: center;
+}
+
+/***********************/
+/*     CTA SECTION     */
+/***********************/
+.section-cta {
+  padding: 4.8rem 5.2rem 12.8rem 5.2rem;
+}
+
+.container-of-section-cta {
+  max-width: 130rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  /* background-image: linear-gradient(to right bottom, #7af0f0, #0eaaaf); */
+  background-image: linear-gradient(to right bottom, #a9e9e9, #084141d3);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta-title {
+  color: inherit;
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.cta-text {
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(161, 215, 219, 0.35),
+      rgba(130, 204, 194, 0.35)
+    ),
+    url("../img/cta-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.cta-button {
+  width: 27rem;
+  height: 4rem;
+  border-radius: 15px;
+  background-color: #277979d3;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.233);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: rgba(196, 109, 77, 0.842);
+  transform: scale(1.1);
 }

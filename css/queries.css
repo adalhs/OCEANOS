@@ -222,6 +222,15 @@
     row-gap: 5rem;
   }
 
+  .testimonial-card {
+    margin: 0;
+    padding: 2rem 5rem 0 5rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.7rem;
+  }
+
   /********* TEAM PAGE **********/
   .team-container {
     padding: 6rem 7rem;
@@ -261,6 +270,23 @@
 
   .member-info:last-child {
     margin-bottom: 0;
+  }
+
+  .cta {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3rem;
+  }
+
+  .cta-title {
+    font-size: 3.5rem;
+  }
+
+  .cta-button {
+    width: 23rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -389,7 +415,44 @@
   }
 
   .section-news-events {
-    padding: 9rem 1.2rem 0 1.2rem;
+    padding: 9rem 1.2rem 5rem 1.2rem;
+  }
+
+  .container-of-section-news-events {
+    row-gap: 5.5rem;
+  }
+
+  .section-testimonials {
+    padding: 10rem 1.2rem 0 1.2rem;
+  }
+
+  .testimonial-card {
+    margin: 0;
+    padding: 1rem 3.6rem 0 3.6rem;
+  }
+
+  .testimonial-image {
+    height: 15rem;
+  }
+
+  .testimonial {
+    margin-bottom: 0;
+  }
+
+  .section-cta {
+    padding: 3rem 1.2rem 5rem 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    /*must give it a height or it will disappear since this <div> has no content, only
+    a background image in th CSS*/
+    height: 24rem;
+
+    grid-row: 1;
   }
 
   /********* TEAM PAGE **********/
@@ -425,7 +488,7 @@
 
   /*MAKING MOBILE NAVIGATION SMALLER*/
   .main-nav-list-item {
-    width: 105%;
+    width: 90%;
   }
 
   .nav-open .main-nav-sublink {
@@ -511,7 +574,7 @@
   }
 
   .container-of-section-program {
-    padding: 2rem 0 10rem 0;
+    padding: 2rem 0 5rem 0;
   }
 
   .section-title {
@@ -529,12 +592,12 @@
   }
 
   .section-team {
-    padding: 6.5rem 1.2rem 0 1.2rem;
+    padding: 1.5rem 1.2rem 0 1.2rem;
   }
 
   .container-of-section-team {
     row-gap: 3rem;
-    padding: 2.8rem 0 6rem 0;
+    padding: 2.8rem 0 3rem 0;
   }
 
   .team-group-image {
@@ -546,7 +609,58 @@
   }
 
   .section-news-events {
-    padding: 7rem 1.2rem 0 1.2rem;
+    padding: 7rem 1.2rem 1rem 1.2rem;
+  }
+
+  .container-of-section-news-events {
+    margin-bottom: 4rem;
+  }
+
+  .carousel-caption p {
+    font-size: 2rem;
+  }
+
+  .section-testimonials {
+    padding: 6rem 1.2rem 0 1.2rem;
+  }
+
+  .container-of-section-testimonials {
+    row-gap: 5.8rem;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    gap: 4rem;
+    background-color: #fff;
+  }
+
+  .testimonial-card-right {
+    flex-direction: column-reverse;
+  }
+
+  .testimonial-image {
+    height: 10rem;
+  }
+
+  .testimonial-text {
+    margin-bottom: 1rem;
+  }
+
+  .cta-title,
+  .cta-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
 
   /********** TEAM PAGE *********/
