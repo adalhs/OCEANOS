@@ -648,8 +648,12 @@
     height: 10rem;
   }
 
-  .testimonial-text {
+  .testimonial-text,
+  .testimonial-author {
     margin-bottom: 1rem;
+
+    /* blue text color doesn't look good when I take off the blue card background */
+    color: #555;
   }
 
   .cta-title,
