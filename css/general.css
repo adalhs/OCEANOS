@@ -110,9 +110,10 @@ body {
   position: absolute;
   background-color: #fff;
   z-index: 999;
-  padding: 2rem 1rem 0.25rem 1rem;
+  padding: 0.5rem 1rem 0.25rem 1rem;
   border-radius: 5px;
   display: none;
+  font-weight: 500;
 }
 
 .submenu-list li {
@@ -204,7 +205,7 @@ body {
 /****************************************/
 .half-a-border-on-top {
   /* border-top: 1px solid #555; */
-  border-top: 2px solid rgba(201, 124, 97, 0.842);
+  border-top: 1px solid rgba(201, 124, 97, 0.842);
 }
 
 .link:link,
@@ -221,4 +222,9 @@ body {
 .link:active {
   color: rgba(201, 124, 97, 0.842);
   border-bottom: 1px solid transparent;
+}
+
+.section-title {
+  font-size: 4rem;
+  color: #084141d3;
 }

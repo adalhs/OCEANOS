@@ -341,8 +341,8 @@
     height: 4.4rem;
   }
 
-  .section-of-main-page {
-    padding: 0 1.2rem;
+  .section-program {
+    padding: 6.5rem 1.2rem 0 1.2rem;
   }
 
   .container-of-section-program {
@@ -370,6 +370,10 @@
 
   .program-image3 {
     grid-row: 6;
+  }
+
+  .section-team {
+    padding: 6.5rem 1.2rem 0 1.2rem;
   }
 
   .container-of-section-team {
@@ -459,7 +463,7 @@
   }
 
   .section-partners {
-    padding: 3rem 0 3.2rem 0;
+    padding-top: 3rem;
   }
 
   .partners-heading {
@@ -494,8 +498,8 @@
     height: 1.75rem;
   }
 
-  .section-of-main-page {
-    padding: 0 1.2rem;
+  .section-program {
+    padding: 7.1rem 1.2rem 0 1.2rem;
   }
 
   .container-of-section-program {
@@ -516,9 +520,13 @@
     margin-top: 2.5rem;
   }
 
+  .section-team {
+    padding: 6.5rem 1.2rem 0 1.2rem;
+  }
+
   .container-of-section-team {
     row-gap: 3rem;
-    padding: 4rem 0 10rem 0;
+    padding: 2.8rem 0 10rem 0;
   }
 
   .team-group-image {
@@ -550,5 +558,73 @@
 
   .member-info {
     margin-bottom: 6rem;
+  }
+}
+
+/****** CAROUSEL QUERIES ****/
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) {
+  /* Show 4th slide on md if col-md-4*/
+  .carousel-inner
+    .active.col-md-6.carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-item {
+    margin-right: 0;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }

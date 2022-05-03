@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -21,6 +24,7 @@
   </head>
   <body>
     <!-- NAVIGATION -->
+    <!-- Logos -->
     <header class="main-header">
       <nav class="main-nav">
         <div class="logos">
@@ -31,13 +35,42 @@
             <img src="img/oceanos-logo.png" class="logo" alt="OCEANOS logo" />
           </a>
         </div>
+
+        <!-- Links -->
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">The Program</a></li>
-          <li><a class="main-nav-link" href="team.html">The Team</a></li>
-          <li><a class="main-nav-link" href="#">News & Events</a></li>
-          <li><a class="main-nav-link" href="#">Gallery</a></li>
-          <li><a class="main-nav-link" href="#">Participate</a></li>
-          <li><a class="main-nav-link" href="#">Contact Us</a></li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="index.html#program">The Program</a>
+            <ul class="submenu-list">
+              <li>
+                <a class="main-nav-sublink" href="itinerary.html"
+                  >Program itinerary</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="index.html#team">The Team</a>
+            <ul class="submenu-list">
+              <li>
+                <a class="main-nav-sublink" href="#">Meet the team</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">News & Events</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Gallery</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Participate</a>
+          </li>
+
+          <li class="main-nav-list-item">
+            <a class="main-nav-link" href="#">Contact Us</a>
+          </li>
         </ul>
 
         <!-- Mobile Navigation Button -->
