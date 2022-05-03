@@ -215,26 +215,48 @@
 /* NEWS/EVENTS SECTION */
 /***********************/
 .section-news-events {
-  padding-top: 10rem;
+  padding: 10rem 5.2rem 0 5.2rem;
 }
 
-/* .container-of-section-news-events {
+.container-of-section-news-events {
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  background-color: transparent;
   row-gap: 7.5rem;
-} */
+  margin-bottom: 8rem;
+}
 
-/* .container-of-section-news-events {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 7.5rem;
-  max-width: 130rem;
-} */
-
-.testcontainer {
-  max-width: 130rem;
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 95%;
+  /* centering after 95% width so it doesn't stick out of photo*/
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.164);
+
+  /* So I can click through the background to the image link */
+  pointer-events: none;
+}
+
+.carousel-caption {
+  /* So I can click on photo through text and still go to link */
+  pointer-events: none;
+}
+
+.carousel-caption p {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1;
+
+  /* To see text better on top of image*/
+  background-color: rgba(0, 0, 0, 0.2);
+
+  /* Shadow with high blur to soften the edges of the p due to the background-color */
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.418);
 }

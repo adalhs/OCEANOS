@@ -60,6 +60,10 @@
     height: 6.3rem;
   }
 
+  .carousel-caption p {
+    font-size: 2.8rem;
+  }
+
   /********** TEAM PAGE *********/
   .team-container {
     padding: 6rem 8rem;
@@ -377,11 +381,15 @@
   }
 
   .container-of-section-team {
-    padding: 2.8rem 0 10rem 0;
+    padding: 2.8rem 0 7rem 0;
   }
 
   .team-group-image {
     margin-bottom: 0;
+  }
+
+  .section-news-events {
+    padding: 9rem 1.2rem 0 1.2rem;
   }
 
   /********* TEAM PAGE **********/
@@ -526,7 +534,7 @@
 
   .container-of-section-team {
     row-gap: 3rem;
-    padding: 2.8rem 0 10rem 0;
+    padding: 2.8rem 0 6rem 0;
   }
 
   .team-group-image {
@@ -535,6 +543,10 @@
 
   .link-team {
     margin-top: 1rem;
+  }
+
+  .section-news-events {
+    padding: 7rem 1.2rem 0 1.2rem;
   }
 
   /********** TEAM PAGE *********/
