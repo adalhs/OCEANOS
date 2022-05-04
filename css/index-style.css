@@ -50,6 +50,11 @@
   padding-top: 5rem;
 }
 
+/*Centering picture element after compressing to WebP*/
+.hero-video-grid picture {
+  text-align: center;
+}
+
 .hero-video-background {
   width: 100%;
   position: absolute;
@@ -168,6 +173,11 @@
   color: #084141d3;
 }
 
+/*Centering picture element after compressing to WebP*/
+.container-of-section-program picture {
+  text-align: center;
+}
+
 .program-section-image {
   width: 70%;
   border-radius: 60px;
@@ -223,6 +233,15 @@
   margin: 0 auto;
   row-gap: 7.5rem;
   margin-bottom: 6rem;
+}
+
+.carousel {
+  /* If I don't do this the carousel displays the background color
+  of the section in the empty area in the second the slide switches.
+  Take this z-index off and put #fff color in the .section-news-events
+  to see what I'm talking about.  Carousel has to be above the
+  .section-news-events*/
+  z-index: 1000;
 }
 
 .carousel-item img {
