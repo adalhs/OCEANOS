@@ -241,7 +241,8 @@
   Take this z-index off and put #fff color in the .section-news-events
   to see what I'm talking about.  Carousel has to be above the
   .section-news-events*/
-  z-index: 1000;
+  z-index: 1;
+  /* Can't put it too high or then it's above the sticky navigation bar */
 }
 
 .carousel-item img {
